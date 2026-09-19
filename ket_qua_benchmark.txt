@@ -1,0 +1,177 @@
+=================================================================
+BÁO CÁO ĐÁNH GIÁ TRUY XUẤT (RETRIEVAL BENCHMARK) — K4-L3A
+Chủ đề: Quy định Học bổng Đại học (University Scholarships)
+=================================================================
+
+
+#################################################################
+CHIẾN LƯỢC: SENTENCE CHUNKING
+#################################################################
+Tổng số chunk trong store: 20
+
+--- Câu hỏi 1 ---
+Query: Sinh viên cần đạt GPA và điểm rèn luyện tối thiểu là bao nhiêu để nhận học bổng Khuyến khích học tập loại Xuất sắc?
+Filter: None
+Gold Answer: GPA từ 3.60 trở lên và điểm rèn luyện từ 80 điểm trở lên (nhận 120% học phí).
+  Top 1: score=0.3891 doc=scholarship-exchange-student | ## Điều 2: Điều kiện ứng tuyển 1. Là sinh viên đại học chính quy đã hoàn thành tối thiểu **30 tín ch...
+  Top 2: score=0.2622 doc=scholarship-sponsor-student | ## Điều 3: Tiêu chí xét chọn 1. Sinh viên có điểm GPA tích lũy đạt từ **2.50 trở lên** trong học kỳ ...
+  Top 3: score=0.2296 doc=scholarship-exchange-student | 4. Không trong thời gian bị kỷ luật từ mức khiển trách trở lên....
+Đánh giá: MISS
+
+--- Câu hỏi 2 ---
+Query: Mức tài trợ của học bổng Doanh nghiệp và Hỗ trợ tài chính vượt khó là bao nhiêu tiền mỗi học kỳ?
+Filter: None
+Gold Answer: 15.000.000 VNĐ / suất / học kỳ.
+  Top 1: score=0.2038 doc=scholarship-merit-student | # Quy định học bổng Khuyến khích học tập cho sinh viên  ## Điều 1: Đối tượng áp dụng Học bổng Khuyến...
+  Top 2: score=0.1461 doc=scholarship-valedictorian-student | 2. Điểm rèn luyện cả năm học đạt từ loại **Tốt trở lên** (tối thiểu 80 điểm) và không vi phạm kỷ luậ...
+  Top 3: score=0.1349 doc=scholarship-sponsor-student | ## Điều 3: Tiêu chí xét chọn 1. Sinh viên có điểm GPA tích lũy đạt từ **2.50 trở lên** trong học kỳ ...
+Đánh giá: HIT_TOP3
+
+--- Câu hỏi 3 ---
+Query: Quy định nộp hồ sơ xin cấp học bổng tại phòng nào?
+Filter: {'audience': 'student'}
+Gold Answer: Sinh viên nộp đơn xác nhận điều chỉnh kèm bảng điểm đã cập nhật về Phòng Công tác Sinh viên (CTSV) trong thời hạn 15 ngày kể từ ngày công bố điểm chính thức.
+  Top 1: score=0.2115 doc=scholarship-merit-student | # Quy định học bổng Khuyến khích học tập cho sinh viên  ## Điều 1: Đối tượng áp dụng Học bổng Khuyến...
+  Top 2: score=0.1723 doc=scholarship-exchange-student | # Học bổng Trao đổi sinh viên quốc tế  ## Điều 1: Quyền lợi học bổng Sinh viên trúng tuyển chương tr...
+  Top 3: score=0.1019 doc=scholarship-sponsor-student | Điểm rèn luyện đạt từ loại Khá (từ 65 điểm) trở lên. 3. Có giấy xác nhận hoàn cảnh khó khăn hoặc sổ ...
+Đánh giá: HIT_TOP1
+
+--- Câu hỏi 4 ---
+Query: Sinh viên tham gia chương trình học bổng Trao đổi quốc tế cần chứng chỉ tiếng Anh IELTS tối thiểu bao nhiêu?
+Filter: None
+Gold Answer: IELTS tối thiểu 6.5 (hoặc TOEFL iBT từ 79 điểm trở lên).
+  Top 1: score=0.2980 doc=scholarship-exchange-student | Điểm trung bình GPA tích lũy tính đến thời điểm nộp hồ sơ đạt từ **3.20 trở lên**. 3. Năng lực ngoại...
+  Top 2: score=0.2538 doc=scholarship-merit-student | ## Điều 3: Hồ sơ và quy trình nộp - Sinh viên không cần nộp đơn xin xét học bổng KKHT riêng; hệ thốn...
+  Top 3: score=0.1850 doc=scholarship-sponsor-student | ## Điều 3: Tiêu chí xét chọn 1. Sinh viên có điểm GPA tích lũy đạt từ **2.50 trở lên** trong học kỳ ...
+Đánh giá: HIT_TOP1
+
+--- Câu hỏi 5 ---
+Query: Điều kiện GPA và điểm rèn luyện để duy trì học bổng toàn phần đối với tân sinh viên thủ khoa qua từng năm học là gì?
+Filter: None
+Gold Answer: GPA tích lũy kết thúc năm học từ 3.00 trở lên và điểm rèn luyện đạt loại Tốt trở lên (tối thiểu 80 điểm).
+  Top 1: score=0.2912 doc=scholarship-sponsor-student | Điểm rèn luyện đạt từ loại Khá (từ 65 điểm) trở lên. 3. Có giấy xác nhận hoàn cảnh khó khăn hoặc sổ ...
+  Top 2: score=0.2220 doc=scholarship-exchange-student | Điểm trung bình GPA tích lũy tính đến thời điểm nộp hồ sơ đạt từ **3.20 trở lên**. 3. Năng lực ngoại...
+  Top 3: score=0.2106 doc=scholarship-valedictorian-student | - Được ưu tiên bố trí chỗ ở miễn phí tại Ký túc xá của trường trong suốt khóa học. ## Điều 3: Tiêu c...
+Đánh giá: HIT_TOP3
+
+
+#################################################################
+CHIẾN LƯỢC: RECURSIVE CHUNKING
+#################################################################
+Tổng số chunk trong store: 29
+
+--- Câu hỏi 1 ---
+Query: Sinh viên cần đạt GPA và điểm rèn luyện tối thiểu là bao nhiêu để nhận học bổng Khuyến khích học tập loại Xuất sắc?
+Filter: None
+Gold Answer: GPA từ 3.60 trở lên và điểm rèn luyện từ 80 điểm trở lên (nhận 120% học phí).
+  Top 1: score=0.3722 doc=scholarship-exchange-student | # Học bổng Trao đổi sinh viên quốc tế  ## Điều 1: Quyền lợi học bổng Sinh viên trúng tuyển chương tr...
+  Top 2: score=0.2130 doc=scholarship-faculty-research | ## Điều 2: Định mức tài trợ và quyền lợi - Mức học bổng tài trợ học phí và chi phí nghiên cứu tối đa...
+  Top 3: score=0.1518 doc=scholarship-valedictorian-student | ## Điều 3: Tiêu chuẩn duy trì học bổng Để tiếp tục duy trì học bổng toàn phần qua các năm học tiếp t...
+Đánh giá: MISS
+
+--- Câu hỏi 2 ---
+Query: Mức tài trợ của học bổng Doanh nghiệp và Hỗ trợ tài chính vượt khó là bao nhiêu tiền mỗi học kỳ?
+Filter: None
+Gold Answer: 15.000.000 VNĐ / suất / học kỳ.
+  Top 1: score=0.2344 doc=scholarship-exchange-student | ## Điều 2: Điều kiện ứng tuyển 1. Là sinh viên đại học chính quy đã hoàn thành tối thiểu **30 tín ch...
+  Top 2: score=0.1706 doc=scholarship-exchange-student | 3. Năng lực ngoại ngữ: Yêu cầu chứng chỉ tiếng Anh quốc tế còn hiệu lực tối thiểu đạt **IELTS 6.5** ...
+  Top 3: score=0.1640 doc=scholarship-council-procedure | ## Điều 3: Công bố kết quả và giải quyết khiếu nại - Danh sách xét cấp học bổng sơ bộ được niêm yết ...
+Đánh giá: MISS
+
+--- Câu hỏi 3 ---
+Query: Quy định nộp hồ sơ xin cấp học bổng tại phòng nào?
+Filter: {'audience': 'student'}
+Gold Answer: Sinh viên nộp đơn xác nhận điều chỉnh kèm bảng điểm đã cập nhật về Phòng Công tác Sinh viên (CTSV) trong thời hạn 15 ngày kể từ ngày công bố điểm chính thức.
+  Top 1: score=0.0913 doc=scholarship-valedictorian-student | ## Điều 2: Quyền lợi học bổng - Miễn **100% học phí** toàn khóa học chính quy trong chuẩn thời gian ...
+  Top 2: score=0.0836 doc=scholarship-exchange-student | 3. Năng lực ngoại ngữ: Yêu cầu chứng chỉ tiếng Anh quốc tế còn hiệu lực tối thiểu đạt **IELTS 6.5** ...
+  Top 3: score=0.0547 doc=scholarship-merit-student | # Quy định học bổng Khuyến khích học tập cho sinh viên  ## Điều 1: Đối tượng áp dụng Học bổng Khuyến...
+Đánh giá: HIT_TOP3
+
+--- Câu hỏi 4 ---
+Query: Sinh viên tham gia chương trình học bổng Trao đổi quốc tế cần chứng chỉ tiếng Anh IELTS tối thiểu bao nhiêu?
+Filter: None
+Gold Answer: IELTS tối thiểu 6.5 (hoặc TOEFL iBT từ 79 điểm trở lên).
+  Top 1: score=0.1933 doc=scholarship-exchange-student | 3. Năng lực ngoại ngữ: Yêu cầu chứng chỉ tiếng Anh quốc tế còn hiệu lực tối thiểu đạt **IELTS 6.5** ...
+  Top 2: score=0.1759 doc=scholarship-sponsor-student | # Học bổng Doanh nghiệp và Hỗ trợ tài chính vượt khó cho sinh viên  ## Điều 1: Mục đích và đối tượng...
+  Top 3: score=0.1679 doc=scholarship-exchange-student | ## Điều 2: Điều kiện ứng tuyển 1. Là sinh viên đại học chính quy đã hoàn thành tối thiểu **30 tín ch...
+Đánh giá: HIT_TOP1
+
+--- Câu hỏi 5 ---
+Query: Điều kiện GPA và điểm rèn luyện để duy trì học bổng toàn phần đối với tân sinh viên thủ khoa qua từng năm học là gì?
+Filter: None
+Gold Answer: GPA tích lũy kết thúc năm học từ 3.00 trở lên và điểm rèn luyện đạt loại Tốt trở lên (tối thiểu 80 điểm).
+  Top 1: score=0.2131 doc=scholarship-council-procedure | # Quy trình thẩm định và ban hành quyết định trao học bổng  ## Điều 1: Thành phần Hội đồng xét duyệt...
+  Top 2: score=0.1765 doc=scholarship-sponsor-student | ## Điều 2: Định mức tài trợ - Mức học bổng tiêu chuẩn là **15.000.000 VNĐ / suất / học kỳ**. - Học b...
+  Top 3: score=0.1600 doc=scholarship-valedictorian-student | ## Điều 2: Quyền lợi học bổng - Miễn **100% học phí** toàn khóa học chính quy trong chuẩn thời gian ...
+Đánh giá: HIT_TOP3
+
+
+#################################################################
+CHIẾN LƯỢC: FIXED CHUNKING
+#################################################################
+Tổng số chunk trong store: 28
+
+--- Câu hỏi 1 ---
+Query: Sinh viên cần đạt GPA và điểm rèn luyện tối thiểu là bao nhiêu để nhận học bổng Khuyến khích học tập loại Xuất sắc?
+Filter: None
+Gold Answer: GPA từ 3.60 trở lên và điểm rèn luyện từ 80 điểm trở lên (nhận 120% học phí).
+  Top 1: score=0.1563 doc=scholarship-sponsor-student | ưng có tinh thần nỗ lực vươn lên trong học tập.  ## Điều 2: Định mức tài trợ - Mức học bổng tiêu chu...
+  Top 2: score=0.1133 doc=scholarship-merit-student | n** (loại Tốt hoặc Xuất sắc).    - Mức học bổng: Nhận **120% định mức học phí** chuẩn của học kỳ tươ...
+  Top 3: score=0.1052 doc=scholarship-council-procedure | nhận hồ sơ, Ban Thư ký có trách nhiệm tổng hợp, kiểm tra tính hợp lệ và lập danh sách đề xuất sơ bộ....
+Đánh giá: HIT_TOP3
+
+--- Câu hỏi 2 ---
+Query: Mức tài trợ của học bổng Doanh nghiệp và Hỗ trợ tài chính vượt khó là bao nhiêu tiền mỗi học kỳ?
+Filter: None
+Gold Answer: 15.000.000 VNĐ / suất / học kỳ.
+  Top 1: score=0.1824 doc=scholarship-council-procedure | m việc nêu trên, nếu không có khiếu nại phát sinh, Chủ tịch Hội đồng ký ban hành Quyết định chính th...
+  Top 2: score=0.1211 doc=scholarship-exchange-student |  4. Không trong thời gian bị kỷ luật từ mức khiển trách trở lên....
+  Top 3: score=0.1046 doc=scholarship-valedictorian-student | từ mức khiển trách trở lên. Nếu không đạt một trong hai tiêu chuẩn trên, học bổng sẽ bị tạm dừng tro...
+Đánh giá: MISS
+
+--- Câu hỏi 3 ---
+Query: Quy định nộp hồ sơ xin cấp học bổng tại phòng nào?
+Filter: {'audience': 'student'}
+Gold Answer: Sinh viên nộp đơn xác nhận điều chỉnh kèm bảng điểm đã cập nhật về Phòng Công tác Sinh viên (CTSV) trong thời hạn 15 ngày kể từ ngày công bố điểm chính thức.
+  Top 1: score=0.2342 doc=scholarship-exchange-student | # Học bổng Trao đổi sinh viên quốc tế  ## Điều 1: Quyền lợi học bổng Sinh viên trúng tuyển chương tr...
+  Top 2: score=0.1841 doc=scholarship-valedictorian-student | thi chọn Học sinh giỏi quốc gia/quốc tế được tuyển thẳng vào trường.  ## Điều 2: Quyền lợi học bổng ...
+  Top 3: score=0.1543 doc=scholarship-merit-student | ọc bổng và không có môn học nào bị điểm F.  ## Điều 2: Tiêu chuẩn xếp hạng và mức học bổng 1. **Học ...
+Đánh giá: HIT_TOP3
+
+--- Câu hỏi 4 ---
+Query: Sinh viên tham gia chương trình học bổng Trao đổi quốc tế cần chứng chỉ tiếng Anh IELTS tối thiểu bao nhiêu?
+Filter: None
+Gold Answer: IELTS tối thiểu 6.5 (hoặc TOEFL iBT từ 79 điểm trở lên).
+  Top 1: score=0.3066 doc=scholarship-exchange-student |  4. Không trong thời gian bị kỷ luật từ mức khiển trách trở lên....
+  Top 2: score=0.2340 doc=scholarship-faculty-research |  cam kết công bố tối thiểu **02 bài báo khoa học quốc tế** trên các tạp chí thuộc danh mục ISI/Scopu...
+  Top 3: score=0.1753 doc=scholarship-council-procedure | ng bố kết quả và giải quyết khiếu nại - Danh sách xét cấp học bổng sơ bộ được niêm yết công khai trê...
+Đánh giá: HIT_TOP1
+
+--- Câu hỏi 5 ---
+Query: Điều kiện GPA và điểm rèn luyện để duy trì học bổng toàn phần đối với tân sinh viên thủ khoa qua từng năm học là gì?
+Filter: None
+Gold Answer: GPA tích lũy kết thúc năm học từ 3.00 trở lên và điểm rèn luyện đạt loại Tốt trở lên (tối thiểu 80 điểm).
+  Top 1: score=0.1993 doc=scholarship-sponsor-student | # Học bổng Doanh nghiệp và Hỗ trợ tài chính vượt khó cho sinh viên  ## Điều 1: Mục đích và đối tượng...
+  Top 2: score=0.1805 doc=scholarship-merit-student | # Quy định học bổng Khuyến khích học tập cho sinh viên  ## Điều 1: Đối tượng áp dụng Học bổng Khuyến...
+  Top 3: score=0.1742 doc=scholarship-faculty-research | ý lịch khoa học cá nhân. - Nơi tiếp nhận hồ sơ: Giảng viên nộp trực tiếp tại **Phòng Quản lý Khoa họ...
+Đánh giá: MISS
+
+=================================================================
+THỰC NGHIỆM A/B: METADATA FILTERING (CÂU HỎI 3)
+=================================================================
+
+[A] Chạy KHÔNG có filter (metadata_filter=None):
+  Top 1: score=0.2769 doc=scholarship-faculty-research (audience: faculty)
+         content: ## Điều 4: Nghĩa vụ sau khi nhận tài trợ Giảng viên cam kết công bố tối thiểu **02 bài báo khoa học quốc tế** ...
+  Top 2: score=0.2115 doc=scholarship-merit-student (audience: student)
+         content: # Quy định học bổng Khuyến khích học tập cho sinh viên  ## Điều 1: Đối tượng áp dụng Học bổng Khuyến khích học...
+  Top 3: score=0.1723 doc=scholarship-exchange-student (audience: student)
+         content: # Học bổng Trao đổi sinh viên quốc tế  ## Điều 1: Quyền lợi học bổng Sinh viên trúng tuyển chương trình trao đ...
+
+[B] Chạy CÓ filter (metadata_filter={'audience': 'student'}):
+  Top 1: score=0.2115 doc=scholarship-merit-student (audience: student)
+         content: # Quy định học bổng Khuyến khích học tập cho sinh viên  ## Điều 1: Đối tượng áp dụng Học bổng Khuyến khích học...
+  Top 2: score=0.1723 doc=scholarship-exchange-student (audience: student)
+         content: # Học bổng Trao đổi sinh viên quốc tế  ## Điều 1: Quyền lợi học bổng Sinh viên trúng tuyển chương trình trao đ...
+  Top 3: score=0.1019 doc=scholarship-sponsor-student (audience: student)
+         content: Điểm rèn luyện đạt từ loại Khá (từ 65 điểm) trở lên. 3. Có giấy xác nhận hoàn cảnh khó khăn hoặc sổ hộ nghèo/c...
